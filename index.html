@@ -3,17 +3,27 @@
   <head>
     <title>Test Page</title>
     <style>
+    .button {
+      position: fixed;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 10;
+      bottom: 0;
+      width: 100px; /* width of button */
+      height: 30px; /* height of button */
+    }
     </style>
   </head>
   <body>
-    
+    <button class="button" onClick="window.location.reload();">New Picture</button>
     <script>
       var e = Math.floor(Math.random() * 2);
       var x = document.createElement("IMG");
       x.setAttribute("src", "https://github.com/yassine128/test/blob/main/images/test".concat(e)+".png?raw=true");
-      x.setAttribute("width", "2000");
+      x.setAttribute("width", "1500");
       x.setAttribute("height", "1100");
-      x.setAttribute("top", "1000");
+      x.setAttribute("top", "755");
       x.setAttribute("alt", "The Pulpit Rock");
       document.body.appendChild(x);
     </script>
